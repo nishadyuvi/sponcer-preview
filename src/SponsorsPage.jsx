@@ -48,7 +48,7 @@ const Section = ({ title, sponsors, columns }) => (
     initial={{ opacity: 0, y: 40 }}
     whileInView={{ opacity: 1, y: 0 }}
     transition={{ duration: 0.8 }}
-    style={{ marginBottom: "50px" }}
+    style={{ marginBottom: "40px" }}
   >
     <div style={sectionHeader}>
       <div style={divider}></div>
@@ -60,7 +60,7 @@ const Section = ({ title, sponsors, columns }) => (
       style={{
         display: "grid",
         gridTemplateColumns: `repeat(${columns}, minmax(0, 1fr))`,
-        gap: "50px",
+        gap: "30px",
         justifyItems: "center",
         width:"100%"
       }}
@@ -129,7 +129,7 @@ const frameStyle = {
 
 const mainTitle = {
   textAlign: "center",
-  fontSize: "70px",
+  fontSize: "60px",
   color: "#f5e6c8",
   marginBottom: "40px",
   letterSpacing: "5px"
@@ -140,7 +140,7 @@ const sectionHeader = {
   alignItems: "center",
   justifyContent: "center",
   gap: "25px",
-  marginBottom: "50px"
+  marginBottom: "35px"
 };
 
 const divider = {
@@ -151,7 +151,7 @@ const divider = {
 };
 
 const sectionTitle = {
-  fontSize: "36px",
+  fontSize: "32px",
   color: "#d4af37",
   letterSpacing: "4px"
 };
@@ -162,7 +162,7 @@ const cardStyle = {
   background: "#f5f0e6",
   border: "3px solid #d4af37",
   borderRadius: "14px",
-  padding: "30px",
+  padding: "26px",
   display: "flex",
   flexDirection: "column",
   alignItems: "center",
