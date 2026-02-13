@@ -48,7 +48,7 @@ const Section = ({ title, sponsors, columns }) => (
     initial={{ opacity: 0, y: 40 }}
     whileInView={{ opacity: 1, y: 0 }}
     transition={{ duration: 0.8 }}
-    style={{ marginBottom: "90px" }}
+    style={{ marginBottom: "40px" }}
   >
     <div style={sectionHeader}>
       <div style={divider}></div>
@@ -59,9 +59,10 @@ const Section = ({ title, sponsors, columns }) => (
     <div
       style={{
         display: "grid",
-        gridTemplateColumns: `repeat(${columns}, 1fr)`,
-        gap: "50px",
-        justifyItems: "center"
+        gridTemplateColumns: `repeat(${columns}, minmax(0, 1fr))`,
+        gap: "30px",
+        justifyItems: "center",
+        width:"100%"
       }}
     >
       {sponsors.map((s, i) => (
@@ -107,7 +108,7 @@ export default SponsorsPage;
 
 const pageStyle = {
   minHeight: "100vh",
-  padding: "120px 20px",
+  padding: "40px 20px",
   background:
     "radial-gradient(circle at 20% 20%, rgba(212,175,55,0.15), transparent 60%), radial-gradient(circle at 80% 80%, rgba(212,175,55,0.1), transparent 60%), #000",
   fontFamily: "'Cinzel', serif",
@@ -118,7 +119,7 @@ const pageStyle = {
 const frameStyle = {
   maxWidth: "1150px",
   margin: "auto",
-  padding: "90px 70px",
+  padding: "40px 70px",
   border: "4px solid #d4af37",
   borderRadius: "22px",
   backgroundColor: "rgba(0,0,0,0.94)",
@@ -128,9 +129,9 @@ const frameStyle = {
 
 const mainTitle = {
   textAlign: "center",
-  fontSize: "70px",
+  fontSize: "60px",
   color: "#f5e6c8",
-  marginBottom: "100px",
+  marginBottom: "40px",
   letterSpacing: "5px"
 };
 
@@ -139,7 +140,7 @@ const sectionHeader = {
   alignItems: "center",
   justifyContent: "center",
   gap: "25px",
-  marginBottom: "50px"
+  marginBottom: "35px"
 };
 
 const divider = {
@@ -150,18 +151,18 @@ const divider = {
 };
 
 const sectionTitle = {
-  fontSize: "36px",
+  fontSize: "32px",
   color: "#d4af37",
   letterSpacing: "4px"
 };
 
 const cardStyle = {
-  width: "210px",
-  height: "230px",
+  width: "160px",
+  height: "176px",
   background: "#f5f0e6",
   border: "3px solid #d4af37",
   borderRadius: "14px",
-  padding: "30px",
+  padding: "26px",
   display: "flex",
   flexDirection: "column",
   alignItems: "center",
